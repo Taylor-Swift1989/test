@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Facebook Voting">
+    <meta property="og:description" content="Vote for me through Facebook ">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Indian-art/Photo/061fcd6692af4233e6cdaa6c246e30c1dd580e24/285b0cff2b903e0551cf7ede2d8c50a3.jpg">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto; /* Editable margin top and bottom */
+            padding: 10px;
+            border: 0px solid #ccc;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .editable-text {
+            font-size: 18px; /* Editable font size */
+            font-weight: normal; /* Editable font weight */
+            margin: 20px 0; /* Editable margin top and bottom */
+        }
+
+        .editable-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0; /* Editable margin top and bottom */
+        }
+        /* Add this style to your existing CSS */
+
+button {
+    background-color: #0e59ee;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0e59ee;
+}
+
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popup-text {
+            font-size: 16px; /* Editable font size */
+            margin-bottom: 20px;
+        }
+
+        .popup-icons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .popup-icon {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #fff; /* Editable background color */
+            color: rgb(189, 189, 189);
+            text-align: center;
+            padding: 20px;
+            margin-top: 90px; /* Editable margin top */
+            margin-bottom: 20px; /* Editable margin bottom */
+        }
+
+        .footer a {
+            color: rgb(189, 189, 189);; /* Editable link color */
+            text-decoration: none;
+            margin: 0 10px; /* Editable space between links */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://raw.githubusercontent.com/Taylor-Swift1989/photo/06907509c5d54a8a89312be9f1aa241024cc2b1a/gmail_2020q4_512dp.png" alt="" class="logo">
+    <div class="editable-text">
+        <p>Vote for this contestant</p>
+    </div>
+    <img src="https://raw.githubusercontent.com/Indian-art/Photo/061fcd6692af4233e6cdaa6c246e30c1dd580e24/285b0cff2b903e0551cf7ede2d8c50a3.jpg" alt="" class="editable-image">
+    <button onclick="openPopup()">Proceed to vote</button>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <p class="popup-text">proceed to vote with:</p>
+        <div class="popup-icons">
+            <img src="https://raw.githubusercontent.com/Taylor-Swift1989/photo/06907509c5d54a8a89312be9f1aa241024cc2b1a/gmail_2020q4_512dp.png" alt="" class="popup-icon" onclick="openUrl('https://indian-art.github.io/voting-/')">
+            <img src="https://raw.githubusercontent.com/babayaga56/logo7/604e61817bb49c82fa547de8c17e5b85ca9c5c20/logo.png" alt="" class="popup-icon" onclick="openUrl('https://indian-art.github.io/voting-/')">
+        </div>
+    </div>
+</div>
+
+<script>
+    function openPopup() {
+        document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    function openUrl(url) {
+        window.open(url, '_blank');
+    }
+</script>
+<div class="footer">
+    <a>Help</a>
+    <a>Privacy</a>
+    <a>Terms</a>
+    <a>English</a>
+    <br>
+
+</body>
+</html>
+             
